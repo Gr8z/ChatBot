@@ -319,4 +319,11 @@
 <category><pattern>IS <set>article</set> <set>month</set> * MONTH *</pattern>
 <template><srai>IS <star index="2"/> A MONTH</srai></template>
 </category>
+<category><pattern>kaisay ho?</pattern>
+<template>Alhumdulillah</template>
+</category>
+<category>
+<pattern>i am hungry</pattern>
+<template>it's good to be hungry sometimes</template>
+</category>
 </aiml>
