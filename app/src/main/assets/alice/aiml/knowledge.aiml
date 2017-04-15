@@ -193,6 +193,9 @@
 <category><pattern>IS * AN ANIMAL</pattern>
 <template><star/> is not an animal I know.</template>
 </category>
+<category><pattern>pagal</pattern>
+<template>you too</template>
+</category>
 <category><pattern>IS <set>animal</set> AN ANIMAL</pattern>
 <template><star/> is an animal.</template>
 </category>
@@ -274,6 +277,7 @@
 <category><pattern><set>language</set></pattern>
 <template><star/> is a language.</template>
 </category>
+
 <category><pattern>IS * A LANGUAGE</pattern>
 <template><star/> is not a language I know.</template>
 </category>

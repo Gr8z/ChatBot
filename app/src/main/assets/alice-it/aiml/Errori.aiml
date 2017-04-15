@@ -17,5 +17,8 @@
 <pattern>INVALIDURL</pattern>
 <template>Spiacente ma mi hai dato un u r l sbagliato riprova.</template>
 </category>
-
+<category>
+<pattern>pagal</pattern>
+<template>Sach mai.</template>
+</category>
 </aiml>

@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background_hd" >
+    android:background="@drawable/ok" >
 
     <ListView
         android:id="@+id/chat_listView"
@@ -36,6 +36,16 @@
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"
             android:inputType="text" />
-    </RelativeLayout>
 
-</RelativeLayout>
+        <!--  <TextView
+               android:id="@+id/chat_textview"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignParentLeft="true"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentEnd="true"
+               android:inputType="text" /> -->
+       </RelativeLayout>
+
+   </RelativeLayout>

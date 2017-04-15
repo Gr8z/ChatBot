@@ -21,6 +21,8 @@ package it.moondroid.chatbot.alice;
 
 
 import android.content.Context;
+import android.content.Intent;
+import android.net.Uri;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -130,8 +132,16 @@ public class Alice {
         Chat chatSession = new Chat(bot, false);
         bot.brain.nodeStats();
         response = chatSession.multisentenceRespond(request);
-        while (response.contains("&lt;")) response = response.replace("&lt;","<");
-        while (response.contains("&gt;")) response = response.replace("&gt;",">");
+        while (response.contains("&lt;")) response = response.replace("&lt;", "<");
+        while (response.contains("&gt;")) response = response.replace("&gt;", ">");
+        while (response.contains("<camera>")) {
+            Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
+            context.startActivity(intent);
+        }
+        while (response.contains("<search>")) {
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+            context.startActivity(browserIntent);
+        }
 
         return response;
     }
