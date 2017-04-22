@@ -196,6 +196,43 @@
 <category><pattern>pagal</pattern>
 <template>you too</template>
 </category>
+<category><pattern>I am hungry</pattern>
+<template>we have a good food court downstairs. Grab something form there</template>
+</category><category><pattern>nothing is there</pattern>
+<template>you can't say anything without exploring</template>
+</category><category><pattern>suggest something to eat</pattern>
+<template>what about pizza with extra cheese</template>
+</category>
+<category><pattern>i dont like food court</pattern>
+<template>well then, i dont like you... sorry dude just kidding/template>
+</category>
+<category><pattern>nothing in fc</pattern>
+<template>you can't say anything without exploring</template>
+</category>
+<category><pattern>nothing in food court</pattern>
+<template>you can't say anything without exploring</template>
+</category>
+<category><pattern>show nearby restaurant</pattern>
+<template>we just have food court in DIAC lol</template>
+</category>
+<category><pattern>search nearby restaurant</pattern>
+<template>we just have food court in DIAC lol</template>
+</category>
+<category><pattern>search for restaurant</pattern>
+<template>we just have food court in DIAC lol</template>
+</category>
+<category><pattern>restaurant</pattern>
+<template>we just have food court in DIAC lol</template>
+</category>
+<category><pattern>woman</pattern>
+<template>lovely to talk you Ms.</template>
+</category>
+<category><pattern>man</pattern>
+<template>nice to talk you Mr.</template>
+</category>
+
+
+
 <category><pattern>IS <set>animal</set> AN ANIMAL</pattern>
 <template><star/> is an animal.</template>
 </category>
