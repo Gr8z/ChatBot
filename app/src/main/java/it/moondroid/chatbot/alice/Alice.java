@@ -142,14 +142,21 @@ public class Alice {
             break;
         }
         while (response.contains("<search>")) {
-            response = response.replace("<search>", "");
+            response = response.replace("<search>", "Looking up ");
             response = response.replace("</search>", "");
-            String find = response;
+            String find = response.replace("Looking up ", "");;
             Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.ae/search?q=" + find));
             context.startActivity(browserIntent);
             break;
         }
-
+        while (response.contains("<call>")) {
+            response = response.replace("<call>", "calling ");
+            response = response.replace("</call>", "");
+            String call = response.replace("calling ", "");
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + call));
+            context.startActivity(intent);
+            break;
+        }
 
         return response;
     }

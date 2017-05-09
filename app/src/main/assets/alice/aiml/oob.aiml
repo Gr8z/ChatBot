@@ -67,6 +67,18 @@ To help the developers understand your problem, you can choose to send us a tran
 <category><pattern>SEARCH *</pattern>
 <template><search><star/></search></template>
 </category>
+<category><pattern>CONTACT *</pattern>
+<template>
+    <random>
+        <li><call>056-789-3990</call></li>
+        <li><call>056-789-3850</call></li>
+        <li><call>056-789-3123</call></li>
+        <li><call>056-789-3432</call></li>
+        <li><call>056-789-3760</call></li>
+        <li><call>056-789-1243</call></li>
+    </random>
+</template>
+</category>
 <category><pattern>YES</pattern><that>WOULD YOU LIKE TO SEND THIS FEATURE REQUEST *</that>
 <template><srai>SEND FEATURE REQUEST <get name="featurerequest"/></srai></template>
 </category>
