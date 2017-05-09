@@ -134,13 +134,20 @@ public class Alice {
         response = chatSession.multisentenceRespond(request);
         while (response.contains("&lt;")) response = response.replace("&lt;", "<");
         while (response.contains("&gt;")) response = response.replace("&gt;", ">");
-        while (response.contains("<camera>")) {
+        while (response.contains("<camera/>")) {
+
+            response = response.replace("<camera/>", "");
             Intent intent = new Intent("android.media.action.IMAGE_CAPTURE");
             context.startActivity(intent);
+            break;
         }
         while (response.contains("<search>")) {
-            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.com"));
+            response = response.replace("<search>", "");
+            response = response.replace("</search>", "");
+            String find = response;
+            Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.google.ae/search?q=" + find));
             context.startActivity(browserIntent);
+            break;
         }
 
 

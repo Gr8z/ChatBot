@@ -62,16 +62,16 @@ To help the developers understand your problem, you can choose to send us a tran
 <template>I'm opening Google search.  <oob><search/></oob></template>
 </category>
 <category><pattern>GOOGLE *</pattern>
-<template><oob><search><star/></search></oob> I'm opening your browser.</template>
+<template><search><star/></search></template>
 </category>
 <category><pattern>SEARCH *</pattern>
-<template>I'll try a web search.  <oob><search><star/></search></oob></template>
+<template><search><star/></search></template>
 </category>
 <category><pattern>YES</pattern><that>WOULD YOU LIKE TO SEND THIS FEATURE REQUEST *</that>
 <template><srai>SEND FEATURE REQUEST <get name="featurerequest"/></srai></template>
 </category>
 <category><pattern>LAUNCH CAMERA</pattern>
-<template>Launching the camera.  <oob><camera>on</camera></oob></template>
+<template>Launching the camera. <camera/></template>
 </category>
 <category><pattern>LAUNCH * DOT COM</pattern>
 <template>Let's go to <star/>.com.  <oob><url>http://<star/>.com</url></oob></template>
